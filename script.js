@@ -7,6 +7,7 @@ async function getValorDolar(){
 
 getValorDolar().then(valor => {
     dolar = valor.USDBRL.high;
+    convert("usd-to-brl")
 });
 
 let usdInput = document.querySelector("#usd")
@@ -29,7 +30,7 @@ brlInput.addEventListener("blur", () => {
 })
 
 
-usdInput.value = "1000,00"
+usdInput.value = "1"
 convert("usd-to-brl")
 
 
